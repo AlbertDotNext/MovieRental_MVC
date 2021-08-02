@@ -1,0 +1,13 @@
+﻿@model List<ApplicationCore.Models.MovieCardResponseModel>
+
+@foreach (var movie in Model)
+{
+<div class="col-3">
+    <div class="card mb-4 shadow bg-light">
+        <a asp-controller="Movies" asp-action="Details" asp-route-id="@movie.Id">
+            <img src="@movie.PosterUrl" class="img-fluid" alt="@movie.Title">
+        </a>
+    </div>
+</div>
+    
+}

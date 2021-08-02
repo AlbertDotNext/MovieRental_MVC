@@ -1,0 +1,9 @@
+﻿@model List<ApplicationCore.Models.GenreModel>
+
+<div>
+    @foreach (var genre in Model)
+    {
+        
+        <span class="badge badge-secondary">@genre.Name</span>
+    }
+</div>
